@@ -8,7 +8,7 @@ You have been handed three data sources pulled from the company's systems:
 
 - A **transaction export** covering 1999–2001
 - **Internal emails** from executives and staff mentioning key entities
-- A **corporate email archive** with entity mentions extracted from thousands of internal messages
+- A **summary of entity mentions** extracted from thousands of internal messages
 - A **reference table** cross-referencing company names against the ICIJ Offshore Leaks database
 
 None of the sources alone is conclusive. Your job is to connect them.
@@ -40,14 +40,8 @@ The transaction data contains real Enron entity names and four embedded forensic
 
 ### How to run it
 
-1. Open [claude.ai](https://claude.ai) or your Claude environment
-2. Attach the following files:
-   - `data/structured/transactions.csv`
-   - `data/structured/accounts.json`
-   - `data/structured/extracted_entities.csv`
-   - `data/unstructured/emails/` *(drag in a selection of emails from this folder)*
-   - `data/reference/icij_bridge.csv`
-3. Send the prompt below
+1. Clone this repo and open it in [Claude Code](https://claude.ai/code)
+2. Copy the prompt below into the Claude Code chat and hit enter — Claude will read the files directly from the repo
 
 ---
 
