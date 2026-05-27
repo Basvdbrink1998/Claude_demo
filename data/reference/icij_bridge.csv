@@ -1,0 +1,372 @@
+node_id,name,jurisdiction,jurisdiction_description,countries,sourceID,valid_until,note,matched_term
+10000239,MARLIN GROUP INC.,SAM,Samoa,Seychelles,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10019008,BLUE MARLIN LIMITED,SEY,Seychelles,Estonia,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10019516,PANTALONE LTD.,SEY,Seychelles,Monaco,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10021436,GREAT MARLIN FINANCE S.A.,SEY,Seychelles,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10022448,MARLIN INDUSTRY INC.,SEY,Seychelles,Hong Kong,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10027178,"Dong Guan ShenRong Industrial Co., Ltd",SEY,Seychelles,Hong Kong,Panama Papers,The Panama Papers data is current through 2015,,Enron
+10037650,"""METALON"" LTD.",NIUE,Niue,Russia,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10040650,TALON ENTERPRISES LIMITED,NIUE,Niue,United Arab Emirates,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10053942,JEDI INVESTMENTS BUSINESS CORP.,PMA,Panama,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,JEDI
+10064605,SOUTHAMPTON GROUP LTD.,BVI,British Virgin Islands,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,Southampton
+10067803,SOUTHAMPTON FINANCIAL GROUP LTD.,BVI,British Virgin Islands,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,Southampton
+10068507,NETALONE.COM BVI) LIMITED,BVI,British Virgin Islands,Hong Kong,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10082521,JEDI LIMITED,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,JEDI
+10083644,KINMARLIN MANAGERS LTD.,BVI,British Virgin Islands,Gibraltar,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10133995,KIVA RAPTOR INC,BVI,British Virgin Islands,United Arab Emirates,Panama Papers,The Panama Papers data is current through 2015,,Raptor
+10084588,MARLIN STAR ASSETS CORP.,BVI,British Virgin Islands,Luxembourg,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10093250,SOUTHAMPTON PROPERTIES LIMITED,BVI,British Virgin Islands,Jordan,Panama Papers,The Panama Papers data is current through 2015,,Southampton
+10097170,CATALONE TRADING LIMITED,BVI,British Virgin Islands,United Arab Emirates,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10097612,BELDEN INVESTMENTS LIMITED,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Belden
+10099965,BLACK MARLIN ENERGY LIMITED,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10109934,MARLINDELL LIMITED,BVI,British Virgin Islands,United Kingdom,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10113967,BLUE MARLIN TRADING LIMITED,BVI,British Virgin Islands,Gibraltar,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10114510,MARLINGTON LIMITED,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10118036,OSPREY IMPORT LIMITED,BVI,British Virgin Islands,United Arab Emirates,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10118536,TRENRON EQUITY LTD.,BVI,British Virgin Islands,Latvia,Panama Papers,The Panama Papers data is current through 2015,,Enron
+10122833,Talon Africa Limited,BVI,British Virgin Islands,Mauritius,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10131399,Beldent Limited,BVI,British Virgin Islands,United Kingdom,Panama Papers,The Panama Papers data is current through 2015,,Belden
+10131905,Black Marlin Exploration Limited,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10137572,OSPREY PORTFOLIO LIMITED,BVI,British Virgin Islands,Guernsey,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10139038,CENRONT GLOBAL INC.,BVI,British Virgin Islands,Russia,Panama Papers,The Panama Papers data is current through 2015,,Enron
+10141511,Blue Marlin Finance SA,BVI,British Virgin Islands,Netherlands,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10142926,OSPREY NOMINEES LIMITED,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10143727,Osprey Holdings Management Limited,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10144950,MARLIN HOLDINGS LIMITED,BVI,British Virgin Islands,Jersey,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10149918,MARLINA INC.,PMA,Panama,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10152326,KENRON SOLUTIONS LTD.,BVI,British Virgin Islands,Latvia,Panama Papers,The Panama Papers data is current through 2015,,Enron
+10155060,MARLINA PROPERTIES LIMITED,BVI,British Virgin Islands,Cyprus,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10160823,TALONZE LIMITED,BVI,British Virgin Islands,United Arab Emirates,Panama Papers,The Panama Papers data is current through 2015,,Talon
+10175481,OSPREY ENTERPRISES S.A.,PMA,Panama,Luxembourg,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10175868,MARLIN GROUP INC.,BAH,Bahamas,Seychelles,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10176073,BELDENE PROPERTY HOLDINGS LTD.,BAH,Bahamas,United Kingdom,Panama Papers,The Panama Papers data is current through 2015,,Belden
+10179835,JEDI LTD.,BAH,Bahamas,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,JEDI
+10185264,OSPREY TRADING LIMITED,NIUE,Niue,Switzerland,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10189937,MARLIN ENTERPRISES CORP.,PMA,Panama,Panama,Panama Papers,The Panama Papers data is current through 2015,,Marlin
+10193782,OSPREY GLOBAL CAPITAL MANAGEMENT CO. LTD.,BVI,British Virgin Islands,Andorra,Panama Papers,The Panama Papers data is current through 2015,,Osprey
+10198603,ENRON INVESTMENTS LTD.,BVI,British Virgin Islands,Singapore,Panama Papers,The Panama Papers data is current through 2015,,Enron
+137165,Talon377 Inc,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Talon
+141998,Talon Carbide & Tooling International Inc,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Talon
+147461,"Catalonia International, Ltd.",BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Talon
+151801,"RAPTOR LINGZHE CO., LTD.",BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Raptor
+162051,Raptor Investments Group Ltd,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Raptor
+158766,JEDI GROUP HOLDINGS LIMITED,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,JEDI
+169162,Marlinespike Trust,COOK,Cook Islands,Not identified,Offshore Leaks,The Offshore Leaks data is current through 2010,,Marlin
+162363,Osprey Finance Ltd,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Osprey
+189563,Etalon Ltd.,XXX,Undetermined,Not identified,Offshore Leaks,The Offshore Leaks data is current through 2010,,Talon
+197179,GLISAN COMMERCIAL INC.,XXX,Undetermined,British Virgin Islands;United Kingdom,Offshore Leaks,The Offshore Leaks data is current through 2010,,Glisan
+186628,Rubert Marlin,XXX,Undetermined,Not identified,Offshore Leaks,The Offshore Leaks data is current through 2010,This is not an offshore entity even though it was logged as such in original database ICIJ received. It isi an internal account created by the agent to record miscellaneous charges of an officer or intermediary,Marlin
+191100,Antalonica Assosiation S.A.,XXX,Undetermined,British Virgin Islands;Russia,Offshore Leaks,The Offshore Leaks data is current through 2010,,Talon
+191414,CENRON DEVELOPMENT LTD.,XXX,Undetermined,United Kingdom;British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Enron
+208759,Raptor Investment Financial Ltd.,XXX,Undetermined,Not identified;United States,Offshore Leaks,The Offshore Leaks data is current through 2010,,Raptor
+199231,Koppertone Group Ltd.,XXX,Undetermined,United States;Not identified,Offshore Leaks,The Offshore Leaks data is current through 2010,,Kopper
+197795,Raptor Worldwide Ltd.,XXX,Undetermined,British Virgin Islands;Singapore,Offshore Leaks,The Offshore Leaks data is current through 2010,,Raptor
+204670,Marlinspike Investments Ltd.,XXX,Undetermined,Panama;Not identified,Offshore Leaks,The Offshore Leaks data is current through 2010,,Marlin
+223647,Raptor Investment Holdings Limited,XXX,Undetermined,British Virgin Islands;Ireland,Offshore Leaks,The Offshore Leaks data is current through 2010,,Raptor
+231473,Raptor Capital Ltd.,XXX,Undetermined,United States;Not identified,Offshore Leaks,The Offshore Leaks data is current through 2010,,Raptor
+224321,Talon Holding Group Limited,XXX,Undetermined,United Kingdom;British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Talon
+140243,MARLINS INTERNATIONAL LTD,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Marlin
+176441,JEDI INTERNATIONAL GROUP LIMITED,SAM,Samoa,Samoa,Offshore Leaks,The Offshore Leaks data is current through 2010,,JEDI
+123645,BLUE MARLIN INVESTMENTS LIMITED,BVI,British Virgin Islands,British Virgin Islands,Offshore Leaks,The Offshore Leaks data is current through 2010,,Marlin
+20003330,OSPREY INVESTMENTS INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20009559,TIMBERWOLF INTERNATIONAL INVESTMENTS INC,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Timberwolf
+20000578,MARLIN LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20002537,SOUTHAMPTON INVESTMENTS INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Southampton
+20001223,VITALON INVESTMENT CORPORATION LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20013502,"MARLIN INVESTMENTS, INC.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20022560,BLUE MARLIN ENTERPRISES LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20019757,SOUTHAMPTON CONTINENTAL INVESTMENTS,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Southampton
+20021275,"OSPREY PARTNERS, LTD.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20018321,SOCIETE EXECUTIF E TALON D'OR CORPORATION,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20012632,OSPREY INTERNATIONAL LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20014764,ENRON INTERNATIONAL LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Enron
+20021866,OSPREY TECHNOLOGY LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20014846,OSPREY CORPORATION,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20013197,"MARLIN FUTURE FUND LTD, THE",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20019077,WHITEWING INVESTMENTS LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Whitewing
+20024348,JEDI INC,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20025813,WHITEWINGS COMPANY LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Whitewing
+20034872,MARLING CONSULTING LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20035034,OSPREY FUND LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20026742,SINTALONIA ASSOCIATES LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20038688,OSPREY ENTERPRISES INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20046521,EORAPTOR LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20044743,OSPREY SERVICES LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20041901,JEDI INTERNATIONAL INVESTMENT SA,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20039040,WHITE MARLINE INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20043961,BLUE MARLIN CORP.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20036494,"RAPTOR OFFSHORE FUND, LTD.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20039732,MARLIN TRADING LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20052012,JEDI MANAGEMENT S. A.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20042594,"TALON INVESTMENTS, LTD",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20039859,BELDEN INVESTMENTS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Belden
+20038181,MARLIN GROUP INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20040044,RAPTOR CORPORATION,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20048289,MARLIN ASSOCIATES LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20054977,OSPREY & COMPANY LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20055877,JEDI WORKS INC,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20051754,JEDI LTD,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20056524,OSPREY MERIDIAN LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20056537,TALON BUSINESS GROUP LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20056563,BLUE MARLIN INVESTMENTS(BAH) LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20070934,SOUTHAMPTON HOLDINGS CORP.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Southampton
+20066622,BLUE MARLIN HOLDINGS LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20060065,BLACK MARLIN LTD,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20067684,MARLIN COVE LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20065208,BLACK MARLIN (BAHAMAS) LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20068821,OSPREY INTERNATIONAL LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20068835,BLUE MARLIN EQUITY HOLDINGS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20068900,OSPREY INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20074212,MC OSPREY SHIPPING LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20074485,MARLINTON INVESTMENTS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20081644,TALON HOLDINGS CORPORATION,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20075560,"TALON INTERNATIONAL BAHAMAS, LTD.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20077765,RAPTORS INVESTMENT LTD,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20074749,TALON TRADING LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20091578,MARLIN MANAGEMENT LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20078825,RED RAPTOR CORPORATION,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20073026,SOUTHAMPTON GENETIC SCIENCES INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Southampton
+20075804,LJM INVESTMENTS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,LJM
+20092096,MARLIN SERVICES INC,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20087032,"MARLIN INVESTORS GROUP, INC.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20090697,MANCHESTER MARLIN INTERNATIONAL LTD,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20084642,BELDENE PROPERTY HOLDINGS LTD,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Belden
+20086418,TALON CORPORATION LTD,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20094221,"GOLDEN MARLINE, INC",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20087906,"BIG BLUE MARLIN, LTD",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20094536,EAGLE TALON CONSULTING CORP.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20145024,MARLIN MOUNTAIN PEAK INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20166792,MARLIN GLOBAL VENTURES LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20167460,AFRICAN RAPTOR SHIPPING CO. LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20097866,MARLIN EXPORT INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20098705,OSPREY INVESTMENTS LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20098856,FLYING MARLIN INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20122403,BLUE MARLIN LKS LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20133361,BLUE MARLIN SLOPES LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20174525,JEDI THREE INVESTMENTS LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20174579,JEDI THREE PRIME INVESTMENTS LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20123357,OSPREY CLIFFS COMPANY LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20129335,MARLIN CONSULTING RESOURCES LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20140627,OSPREY HOLDINGS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20140790,Blue Marlin Rock Ltd.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20150886,SOUTHAMPTON CONSULTANCE LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Southampton
+20151192,Marlin Manor Ltd.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20161518,Jedine Holdings Ltd.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,JEDI
+20169570,RAPTOR HOLDING GROUP INVESTMENT FUND LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+20170206,BLUE MARLIN MARINE CORP.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20101081,OSPREY CONSULTANTS INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20101540,SOUTHAMPTON INTERNATIONAL INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Southampton
+20115083,MARLINGDENE LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20127142,MARLIN CORPORATION LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20148043,Marlin Wealth Management Inc.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20158090,Osprey Investment & Consulting Inc.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20113535,BLUE MARLIN VENTURES INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20113646,MARLIN VENTURES INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20136359,IRON TALON LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20136618,EAGLE TALON MANAGEMENT LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20157704,"Talon Exploration, Ltd.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20157742,BLUEMARLIN INVESTMENTS HOLDINGS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20165751,MARLINFISH INC.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20166320,MARLIN WORLDWIDE LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20172732,OSPREY SHIPPING CORP.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20173151,BMB Marlin Ltd.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20106751,BOTALON LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Talon
+20149161,Marlin Systems Ltd.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20159309,AFRICAN OSPREY SHIPPING CO. LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20171092,Osprey Network Investment Fund Ltd.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20118568,LKS BLUE MARLIN (BAHAMAS) LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20119480,OSPREY VENTURES LIMITED,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20120573,"MARLIN OF THE BAHAMAS, INC.",BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20132642,MARLIN INTERNATIONAL HOLDINGS LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+20142379,OSPREY MANAGEMENT LTD.,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Osprey
+20153777,Raptor Overseas Limited,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Raptor
+21000119,The Marlin Foundation,BAH,Bahamas,,Bahamas Leaks,The Bahamas Leaks data is current through early 2016.,,Marlin
+82024793,Belden & Blake International Limited,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Belden
+82007507,Marlinspike Limited,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Marlin
+82006242,Southampton Technologies Ltd.,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Southampton
+82001208,Talon Corporation Ltd.,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Talon
+82000725,Cal-Southampton Reinsurance Limited,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Southampton
+82000726,"Cal-Southampton Holdings, Limited",BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Southampton
+82000613,Osprey Limited,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Osprey
+82000351,Landmark (Southampton) Limited,BM,Bermuda,Bermuda,Paradise Papers - Appleby,Appleby data is current through 2014,,Southampton
+82021466,Osprey Aviation Limited,IM,Isle of Man,Isle of Man;Singapore,Paradise Papers - Appleby,Appleby data is current through 2014,,Osprey
+82026005,Enron India GDR Holding Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82026007,Enron Caribbean Basin Energy Services Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82026013,Enron Colombia Energy Services Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82026020,Enron Bahamas Co. Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82011074,Marlindo Holdings Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Marlin
+82011824,Enron India Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82011831,Enron Commercial Finance Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82011849,EnronEnergo Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82011525,Osprey Aircraft leasing Limited (Fourteen)**INCOMPLETE**,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Osprey
+82012260,Osprey Aircraft Leasing Limited (Five),KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Osprey
+82012261,Osprey Aircraft Leasing Limited (Six),KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Osprey
+82011936,Enron Nigeria Power Holding Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82011938,ENRON NIGERIA PIPELINE HOLDING LTD.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82011943,Enron Nigeria IPP Holding Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82002089,"Amoco/Enron Solar Power Development Global, Inc. ** INCOMPLETE **",KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82008447,Enron Americas Limited ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82010129,ENRON PAPUA NEW GUINEA LTD.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007314,Enron Venezuela Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007301,Enron Fuels Services Holding Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007352,Amoco/Enron Solar Power Development International ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007333,Enron Development Management Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007273,Enron Sao Paulo Investments Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007261,Enron Development Funding Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007265,Enron Transportadora de Bolivia Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007257,Enron Mato Grosso do Sul Investments Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007270,Enron LNG Power (Atlantic) Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007233,Enron International Investments Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007230,Enron International Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007737,Enron Wind Cayman Holding Corp. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007761,Enron Gaza International Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007747,Enron Brazil Power Holdings XVIII Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007748,Enron Brazil Power Investments XVIII Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007755,Enron Palestine Inc. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007757,Enron International Chengdu Power Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007771,Enron India Telecom Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007772,Enron LNG Shipping Company,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007800,Enron Wind Cayman Holding Honduras Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007801,Enron (UFEN) Generadora Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007477,Enron International Argentina Investments Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007468,Enron International Argentina Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007497,Enron Mexico Holdings I Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007492,Enron International India Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007433,Enron International Brazil 1997 Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007446,Enron International Bahia Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007440,Enron International Bahia Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007450,Enron International Brazil Investments 1997 Ltd ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007464,Enron Colombia Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007456,Enron International CMI Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007388,Enron Brazil Power Holdings I Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007375,Enron do Brazil Holdings Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007410,Enron Caribe Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007406,Enron Brazil Power Investments III Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007419,Enron Cayman Leasing Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007397,Enron Brazil Power Holdings III Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007427,Enron International Brazil Gas Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007542,Enron Brazil Power Holdings XI Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007536,Enron Brazil Power Holdings VII Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007512,Enron Global Equity Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007521,Enron BW Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007550,Enron Brazil Power Investments VII Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007554,Enron Brazil Power Investments XI Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007566,Enron Australia Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007570,Enron Australia Finance Holdings Ltd. ** INCOMPLETE **,KY,Cayman Islands,Cayman Islands;United States,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82007559,Enron Caribe VI Holdings Ltd.,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,Enron
+82017169,JEDI STAR TRUST,KY,Cayman Islands,Cayman Islands,Paradise Papers - Appleby,Appleby data is current through 2014,,JEDI
+85005106,MARLINDA TOURS,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,Closed date stands for Cancelled date.,Marlin
+85005710,MARLIN IMPORT AND EXPORT,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+85005891,MARLIN BOOSTER TRACKING N.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+85007263,MARLIN ENTERPRISES,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,Closed date stands for Cancelled date.,Marlin
+85007598,BLUE MARLIN CORPORATION A.V.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+85007905,BLUE MARLIN RESTAURANT & TAKE AWAY,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,Closed date stands for Cancelled date.,Marlin
+85012347,MARLIN ELEKTRONICS EXPLOITATIEMAATSCHAPPIJ A.V.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+85014847,IBS MARLIN CONSULTANCE N.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+85017112,TALON TRADE ENTERPRISES & CONSULTANTS AVV,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Talon
+85018288,S.A.T. MARLIN ENTERPRISES NV,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,Closed date stands for Cancelled date.,Marlin
+85021236,BELDEN GROUP A.V.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Belden
+85030806,MARLIN IMPORT ARUBA N.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+85032139,SOUTHAMPTON CORPORATION A.V.V.,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Southampton
+85040694,STICHTING MARLINS SPORT ARUBA,AW,Aruba,,Paradise Papers - Aruba corporate registry,Aruba corporate registry data is current through 2016,,Marlin
+30000304,"BIMINI MARLIN AND BONE FISH CLUB LIMITED, THE",BAH,Bahamas,Bahamas,Paradise Papers - Bahamas corporate registry,Bahamas corporate registry data is current through 2016,,Marlin
+30000572,MARLINGTON LIMITED,BAH,Bahamas,Bahamas,Paradise Papers - Bahamas corporate registry,Bahamas corporate registry data is current through 2016,,Marlin
+30001654,"THE BIMINI MARLIN & TUNA DEVELOPENT COMPANY, LTD.",BAH,Bahamas,Bahamas,Paradise Papers - Bahamas corporate registry,Bahamas corporate registry data is current through 2016,,Marlin
+30006101,BLUE MARLIN INVESTMENTS (BAHAMAS) LIMITED,BAH,Bahamas,Bahamas,Paradise Papers - Bahamas corporate registry,Bahamas corporate registry data is current through 2016,,Marlin
+30010889,BLUE MARLIN COMPANY LIMITED,BAH,Bahamas,Bahamas,Paradise Papers - Bahamas corporate registry,Bahamas corporate registry data is current through 2016,,Marlin
+30012511,SOUTHAMPTON INVESTMENTS LIMITED,BAH,Bahamas,Bahamas,Paradise Papers - Bahamas corporate registry,Bahamas corporate registry data is current through 2016,,Southampton
+100301180,SOUTHAMPTON LIMITED,BRB,Barbados,Cayman Islands;Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Southampton
+100311452,BLUE MARLIN CHARTERS INC,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Marlin
+100638696,MARLINGFORD GROUP INC.,BRB,Barbados,British Virgin Islands;Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Marlin
+100925108,BLUE MARLIN INSURANCE INC.,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,Closed date stands for dissolved date.,Marlin
+101505603,KOPPERS INDUSTRIES INTERNATIONAL TRADE CORPORATION,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,Closed date stands for dissolved date.,Kopper
+101508983,BELDEN FOREIGN SALES CORPORATION,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Belden
+101706406,MARLIN CONSULTANTS INTERNATIONAL CORPORATION,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,Closed date stands for dissolved date.,Marlin
+101715136,ENRON (BARBADOS) INTERNATIONAL BUSINESS CORPORATION,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,Closed date stands for discontinued date.,Enron
+101732091,TALON SHIPPING INC.,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Talon
+101733035,MARLIN SHIPPING INC.,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,Closed date stands for discontinued date. Date discontinued: 14-MAR-2013,Marlin
+101734871,BLUE MARLIN INVESTMENTS CORPORATION,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Marlin
+101736596,MARLIN GOLD TRADING INC.,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Marlin
+102127528,MARLIN REINSURANCE INC.,BRB,Barbados,Barbados,Paradise Papers - Barbados corporate registry,Barbados corporate registry data is current through 2016,,Marlin
+200100068,MARLIN HOLDINGS LIMITED,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200100948,BELDEN SELECT REINSURANCE CORP.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Belden
+200104778,OSPREY INTERNATIONAL INVESTMENT INC.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200104816,RAPTOR CORPORATION,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Raptor
+200105827,BLUE MARLIN LTD,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,Closed date stands for dissolved date.,Marlin
+200108635,OSPREY INVESTMENT CORPORATION,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200108662,OSPREY HEIGHTS ASSOCIATES INC.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200109248,MARLINKA LTD,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200109917,OSPREY SERVICES LTD.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200114990,"GLISAN & GLISAN CAPITAL, LTD.",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Glisan
+200116162,OSPREY CONSULTANTS LTD.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200117540,OSPREY LTD,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200129200,"BRENRON, LTD",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Enron
+200130107,"Blue Marlin Global Group, Inc.",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200132604,"Blue Marlin Investments, Corp",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200134096,Beldent Holdings Ltd,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Belden
+200135831,Talon Assets Corp.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Talon
+200137832,Talon International Services Corp.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Talon
+200137957,EATALON GROUP INC.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Talon
+200140382,Whitewing Inc.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Whitewing
+200140820,GATALONG LIMITED,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Talon
+200142046,SOUTHAMPTON ENTERPRISES INC.,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Southampton
+200501288,"ATLANTIC OSPREY, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200502847,"TALON, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Talon
+200504044,MS JEDI LLC,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,JEDI
+200505431,"TALON BUSINESS PROTECTION, LLC.",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Talon
+200506290,"OSPREY HOLDINGS, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,Closed date stands for dissolved date.,Osprey
+200506939,"BLACK MARLIN, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200506985,"EAGLE TALON HOLDINGS, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,Closed date stands for dissolved date.,Talon
+200508487,"Timberwolf Creek, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Timberwolf
+200511337,"OSPREY VENTURES, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200513345,"RAPTOR MOON, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Raptor
+200513584,"Marlin Global, LLC",KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200517541,LJMG International LLC,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,LJM
+200517874,Osprey RDB LLC,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Osprey
+200800801,BLUE MARLIN TRUST,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200800892,THE RAPTOR TRUST,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Raptor
+200802972,THE BELDEN HILL TRUST,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Belden
+200803410,White Marlin Trust,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Marlin
+200803974,LJM Irrevocable Trust,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,LJM
+200804681,THE RAPTOR 2015 TRUST,KNA,Saint Kitts and Nevis,,Paradise Papers - Nevis corporate registry,Nevis corporate registry data is current through 2016,,Raptor
+240081478,CASA CATALONIA S.A,,,,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2018,,Talon
+240080562,"HERMANOS MARLINS, S.A",,,,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2017,,Marlin
+240020037,Osprey Rotherham Limited,BVI,British Virgin Islands,British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2018,,Osprey
+240022380,MARLIN ENTERPRISES LIMITED,BVI,British Virgin Islands,British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2017,,Marlin
+240021155,VENRON INVESTMENTS LIMITED,BVI,British Virgin Islands,British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2017,,Enron
+240023596,BLACK MARLIN LTD,BVI,British Virgin Islands,British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2017,,Marlin
+240023597,BLUE MARLIN CORPORATE LTD,BVI,British Virgin Islands,British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2017,,Marlin
+240030828,Osprey International Holdings Limited,BVI,British Virgin Islands,British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Provider data is current through 2017,,Osprey
+55075103,Blue Marlin Ltd,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55075758,LJM2 LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,LJM
+55001078,ETALON HOLDINGS LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55007607,SOUTHAMPTON SHIPPING COMPANY LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Southampton
+55010118,OSPREY INSURANCE BROKERS CO LTD,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Osprey
+55015401,PETALON SHIPPING COMPANY LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55016739,JEDI KNIGHT ENTERPRISES LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,JEDI
+55018913,TALON INTERNATIONAL LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55019051,ENRON METALS (MALTA) LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Enron
+55021126,TALON SHIPPING LTD,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55025918,MARLIN SHIPPING CO. LTD,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55026879,CATALONIA SHIPPING COMPANY LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55038353,HEPTALON Trading Ltd.,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55038357,HEPTALON HOLDING LTD,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55038614,CapitalOne Investment Group Limited,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Talon
+55039033,LJMG LTD,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,LJM
+55042847,RAPTOR GROUP LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Raptor
+55043050,Raptor Limited,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Raptor
+55049699,JEDIEL HOLDINGS LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,JEDI
+55056622,MARLIN PROPERTY HOLDINGS LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55056859,Osprey Holdings Limited,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Osprey
+55059313,MARLIN ENTERPRISES LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55069192,MARLIN BRANDS AUSTRALIA LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55073332,MARLIN BRANDS ENTERPRISES LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55073364,MARLIN BRANDS EUROPE LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55081272,E.J. KOPPERS HOLDING B.V.,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Kopper
+55081288,MARLIN YACHTING LTD,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55083790,BLUE MARLIN PROPERTIES LIMITED,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Marlin
+55087162,OSPREY SOFTWARE SERVICES AND SOLUTIONS,MLT,Malta,Malta,Paradise Papers - Malta corporate registry,Malta corporate registry data is current through 2016,,Osprey
+240550187,Osprey Rotherham Limited,VGB,British Virgin Islands,El Salvador;British Virgin Islands,"Pandora Papers - Alemán, Cordero, Galindo & Lee (Alcogal)",Data is current through 2018.,,Osprey
+240430067,"GITALONG INVESTMENTS, INC.",VGB,British Virgin Islands,,Pandora Papers - Overseas Management Company (OMC),Provider data is current through 2016,,Talon
+240554041,LJM Security Trust,USA,South Dakota,,Pandora Papers - Trident Trust,Provider data is current through 2017,,LJM
+240500658,JEDIOD INVESTMENTS LIMITED,VGB,British Virgin Islands,,Pandora Papers - Trident Trust,Provider data is current through 2016,,JEDI

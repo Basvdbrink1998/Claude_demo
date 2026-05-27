@@ -108,7 +108,7 @@ def scan_corpus(enron_dir: str) -> dict:
 
     email_files = [
         f for f in Path(enron_dir).rglob('*')
-        if f.is_file() and not f.suffix
+        if f.is_file() and f.suffix in ('', '.')
     ]
 
     print(f"Scanning {len(email_files):,} email files...")
