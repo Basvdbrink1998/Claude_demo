@@ -1,0 +1,224 @@
+[
+  {
+    "account_id": "ACC-ENR-001",
+    "holder_name": "Enron Corp",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1996-01-01"
+  },
+  {
+    "account_id": "ACC-EXE-001",
+    "holder_name": "Andrew Fastow",
+    "holder_type": "individual",
+    "jurisdiction": "US",
+    "account_type": "personal",
+    "opened_date": "1995-01-01",
+    "employer": "Enron Corp"
+  },
+  {
+    "account_id": "ACC-EXE-002",
+    "holder_name": "Michael Kopper",
+    "holder_type": "individual",
+    "jurisdiction": "US",
+    "account_type": "personal",
+    "opened_date": "1997-04-01",
+    "employer": "Enron Corp"
+  },
+  {
+    "account_id": "ACC-EXE-003",
+    "holder_name": "Ben Glisan",
+    "holder_type": "individual",
+    "jurisdiction": "US",
+    "account_type": "personal",
+    "opened_date": "1996-03-01",
+    "employer": "Enron Corp"
+  },
+  {
+    "account_id": "ACC-EXE-004",
+    "holder_name": "Kevin Hannon",
+    "holder_type": "individual",
+    "jurisdiction": "US",
+    "account_type": "personal",
+    "opened_date": "1995-11-01",
+    "employer": "Enron Broadband Services"
+  },
+  {
+    "account_id": "ACC-EXE-005",
+    "holder_name": "Timothy Belden",
+    "holder_type": "individual",
+    "jurisdiction": "US",
+    "account_type": "personal",
+    "opened_date": "1999-02-01",
+    "employer": "Enron Energy Services"
+  },
+  {
+    "account_id": "ACC-EXE-006",
+    "holder_name": "Lou Pai",
+    "holder_type": "individual",
+    "jurisdiction": "US",
+    "account_type": "personal",
+    "opened_date": "1999-07-01",
+    "employer": "Enron Energy Services"
+  },
+  {
+    "account_id": "ACC-SPE-001",
+    "holder_name": "LJM Cayman L.P.",
+    "holder_type": "company",
+    "jurisdiction": "KY",
+    "account_type": "corporate_checking",
+    "opened_date": "1997-01-01"
+  },
+  {
+    "account_id": "ACC-SPE-002",
+    "holder_name": "LJM2 Co-Investment L.P.",
+    "holder_type": "company",
+    "jurisdiction": "KY",
+    "account_type": "corporate_checking",
+    "opened_date": "1997-04-01"
+  },
+  {
+    "account_id": "ACC-SPE-003",
+    "holder_name": "Chewco Investments L.P.",
+    "holder_type": "company",
+    "jurisdiction": "KY",
+    "account_type": "corporate_checking",
+    "opened_date": "1997-09-01"
+  },
+  {
+    "account_id": "ACC-SPE-004",
+    "holder_name": "JEDI Partners L.P.",
+    "holder_type": "company",
+    "jurisdiction": "KY",
+    "account_type": "corporate_checking",
+    "opened_date": "1999-01-01"
+  },
+  {
+    "account_id": "ACC-SPE-005",
+    "holder_name": "Southampton Place L.P.",
+    "holder_type": "company",
+    "jurisdiction": "KY",
+    "account_type": "corporate_checking",
+    "opened_date": "1999-04-01"
+  },
+  {
+    "account_id": "ACC-SPE-006",
+    "holder_name": "Talon LLC",
+    "holder_type": "company",
+    "jurisdiction": "TX",
+    "account_type": "corporate_checking",
+    "opened_date": "1999-11-01"
+  },
+  {
+    "account_id": "ACC-SPE-007",
+    "holder_name": "Timberwolf LLC",
+    "holder_type": "company",
+    "jurisdiction": "TX",
+    "account_type": "corporate_checking",
+    "opened_date": "1999-09-01"
+  },
+  {
+    "account_id": "ACC-SPE-008",
+    "holder_name": "Whitewing Associates L.P.",
+    "holder_type": "company",
+    "jurisdiction": "KY",
+    "account_type": "corporate_checking",
+    "opened_date": "1998-04-01"
+  },
+  {
+    "account_id": "ACC-SPE-009",
+    "holder_name": "Osprey Trust",
+    "holder_type": "company",
+    "jurisdiction": "VG",
+    "account_type": "corporate_checking",
+    "opened_date": "1998-10-01"
+  },
+  {
+    "account_id": "ACC-SPE-010",
+    "holder_name": "Marlin Water Trust",
+    "holder_type": "company",
+    "jurisdiction": "VG",
+    "account_type": "corporate_checking",
+    "opened_date": "1998-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-001",
+    "holder_name": "Citibank N.A.",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-002",
+    "holder_name": "JP Morgan Chase",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-003",
+    "holder_name": "Deutsche Bank AG",
+    "holder_type": "company",
+    "jurisdiction": "DE",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-004",
+    "holder_name": "Barclays PLC",
+    "holder_type": "company",
+    "jurisdiction": "GB",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-005",
+    "holder_name": "Portland General Electric",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-006",
+    "holder_name": "Dabhol Power Company",
+    "holder_type": "company",
+    "jurisdiction": "IN",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-007",
+    "holder_name": "Azurix Corp",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-008",
+    "holder_name": "Enron Pipeline Company",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-009",
+    "holder_name": "Wessex Water Services",
+    "holder_type": "company",
+    "jurisdiction": "GB",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  },
+  {
+    "account_id": "ACC-EXT-010",
+    "holder_name": "EOTT Energy Partners",
+    "holder_type": "company",
+    "jurisdiction": "US",
+    "account_type": "corporate_checking",
+    "opened_date": "1990-01-01"
+  }
+]
