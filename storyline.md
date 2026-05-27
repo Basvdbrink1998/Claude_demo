@@ -51,7 +51,12 @@ The transaction data contains real Enron entity names and four embedded forensic
 ### Step 1 Prompt
 
 ```
-I'm investigating potential financial fraud at an energy company. I've attached transaction records, account metadata, internal email entity mentions, and a cross-reference against the ICIJ Offshore Leaks database — all covering 1999–2001.
+I'm investigating potential financial fraud at an energy company. The data is in the following files:
+
+- data/structured/transactions.csv
+- data/structured/accounts.json
+- data/structured/extracted_entities.csv
+- data/reference/icij_bridge.csv
 
 Can you go through these and flag anything that looks suspicious? I'm particularly interested in unusual payment patterns and any links to offshore entities.
 ```
