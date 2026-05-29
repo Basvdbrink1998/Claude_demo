@@ -31,13 +31,6 @@ The transaction data contains real Enron entity names and four embedded forensic
 
 ## Step 1 — Data Analysis with Claude
 
-### What you're trying to find
-
-- Payments that are suspiciously close to a regulatory reporting threshold
-- A company that receives money, passes it on, and sends it back — disguised as an investment return
-- Recurring payments to offshore entities described as "consulting" or "advisory" fees
-- A single very large payment made just before a major corporate event
-
 ### How to run it
 
 1. Clone this repo and open it in [Claude Code](https://claude.ai/code)
