@@ -75,6 +75,17 @@ python scripts/extract_enron_entities.py --enron-dir /path/to/maildir
 python scripts/build_icij_bridge.py --icij-nodes /path/to/nodes-entities.csv
 ```
 
+### Reset before each workshop run
+
+`dashboard/` and `dry_run/` are generated during the workshop and ignored by git.
+Run this before each session to ensure Claude starts with a clean slate:
+
+```bash
+python scripts/reset_workshop.py
+```
+
+This deletes both folders. A fresh `git clone` is already clean and needs no reset.
+
 ---
 
 ## Stage 1: Structured & Unstructured Data Analysis
