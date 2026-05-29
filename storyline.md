@@ -126,13 +126,15 @@ the public record say about them?
 ```
 Now I want to turn this investigation into something I can actually use day to day.
 
-Build me a simple web dashboard for exploring the data we've been analysing. It should have:
+Use the @frontend-design skill for the UI and @excalidraw-diagram to sketch the architecture
+first. Build me a simple web dashboard for exploring the data we've been analysing. It should have:
 - A search box where I can type an entity or person name and see related accounts and transactions
 - A network graph showing how the entities connect to each other
 - A transaction timeline for any selected entity, with dates on the x-axis and amounts on the y-axis
 
 Use whatever stack makes sense — a FastAPI backend serving the data from the files in this
-repo, with a single-page frontend to display everything.
+repo, with a single-page frontend to display everything. Once it's running, use @playwright
+to write a quick smoke test that loads the dashboard and searches for an entity.
 ```
 
 ---
