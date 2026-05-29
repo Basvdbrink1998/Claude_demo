@@ -1,0 +1,16 @@
+# Claude Code project-level plugins (installed by Step 0)
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
