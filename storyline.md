@@ -29,6 +29,34 @@ The transaction data contains real Enron entity names and four embedded forensic
 
 ---
 
+## Step 0 — Environment Setup
+
+### How to run it
+
+1. Clone this repo and open it in [Claude Code](https://claude.ai/code)
+2. Copy the prompt below into the Claude Code chat and hit enter — Claude will install the
+   required skills directly from the terminal
+
+---
+
+### Step 0 Prompt
+
+```
+Before we start, please set up my Claude Code environment by running the following commands:
+
+claude plugins install frontend-design
+claude plugins install playwright
+npx antigravity-awesome-skills --claude
+git clone https://github.com/coleam00/excalidraw-diagram-skill .claude/plugins/marketplaces/claude-plugins-official/external_plugins/excalidraw-diagram
+
+These give us better UI generation, browser automation for testing the dashboard,
+a large library of specialist skills, and architecture diagram generation.
+```
+
+---
+
+*Continue to Step 1: Data Analysis →*
+
 ## Step 1 — Data Analysis with Claude
 
 ### How to run it
