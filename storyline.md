@@ -83,4 +83,48 @@ the public record say about them?
 
 ---
 
-*Continue to Step 3: Investigation Dashboard →*
+## Step 3 — Investigation Dashboard
+
+### How to run it
+
+1. Continue in the same Claude Code session
+2. Copy the prompt below into the chat and hit enter — Claude will scaffold and build a
+   working web app directly in the repo
+
+---
+
+### Step 3 Prompt
+
+```
+Now I want to turn this investigation into something I can actually use day to day.
+
+Build me a simple web dashboard for exploring the data we've been analysing. It should have:
+- A search box where I can type an entity or person name and see related accounts and transactions
+- A network graph showing how the entities connect to each other
+- A transaction timeline for any selected entity, with dates on the x-axis and amounts on the y-axis
+
+Use whatever stack makes sense — a FastAPI backend serving the data from the files in this
+repo, with a single-page frontend to display everything.
+```
+
+---
+
+### Follow-up prompts
+
+Once the app is running, try these to extend it iteratively:
+
+```
+Add a sidebar that lists all transactions for the selected node, sorted by date,
+with amounts colour-coded: green for inbound, red for outbound.
+```
+
+```
+Add vertical reference lines on the timeline for key Enron events:
+2001-08-14 (Skilling resignation), 2001-10-16 (earnings restatement),
+2001-12-02 (bankruptcy filing).
+```
+
+```
+Add a flag button on each node so I can mark entities as Suspicious, Verified, or
+Needs Review. Save the flags to a local JSON file so they persist between sessions.
+```
