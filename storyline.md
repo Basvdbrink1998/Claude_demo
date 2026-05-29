@@ -54,4 +54,33 @@ Can you go through these and flag anything that looks suspicious? I'm particular
 
 ---
 
-*Continue to Step 2: Corporate Intelligence →*
+## Step 2 — Corporate Intelligence
+
+### How to run it
+
+1. Continue in the same Claude Code session from Step 1
+2. Copy the prompt below into the chat and hit enter — Claude will search public registries,
+   news archives, and OSINT databases directly from the web
+
+---
+
+### Step 2 Prompt
+
+```
+Several entities came up repeatedly in the data: LJM Cayman L.P., Chewco Investments,
+Southampton Place L.P., and Andrew Fastow. Before I go further I want to know more
+about who these actually are in the real world.
+
+For each one, can you search the web and find:
+- Any company registration details (jurisdiction, incorporation date, registered agents)
+- Names of directors, officers, or beneficial owners on public record
+- Any appearances on sanctions lists, PEP databases, or regulatory watchlists
+- Any news coverage linking them to litigation, enforcement actions, or fraud findings
+
+Pull it together at the end — who sits at the centre of this network, and what does
+the public record say about them?
+```
+
+---
+
+*Continue to Step 3: Investigation Dashboard →*
