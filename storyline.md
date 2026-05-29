@@ -67,11 +67,11 @@ Can you go through these and flag anything that looks suspicious? I'm particular
 ### Step 2 Prompt
 
 ```
-Several entities came up repeatedly in the data: LJM Cayman L.P., Chewco Investments,
-Southampton Place L.P., and Andrew Fastow. Before I go further I want to know more
-about who these actually are in the real world.
+Based on what you just found, I want to dig deeper into the entities and individuals
+that stood out. Before I go further I want to know more about who they actually are
+in the real world.
 
-For each one, can you search the web and find:
+For each flagged entity or person, can you search the web and find:
 - Any company registration details (jurisdiction, incorporation date, registered agents)
 - Names of directors, officers, or beneficial owners on public record
 - Any appearances on sanctions lists, PEP databases, or regulatory watchlists
