@@ -20,7 +20,6 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 
 GENERATED = [
-    REPO_ROOT / "dashboard",
     REPO_ROOT / "dry_run",
 ]
 
