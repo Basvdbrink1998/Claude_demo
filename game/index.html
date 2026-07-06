@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RED FLAG: Follow the Money — Forensic Technology Game</title>
+<style>
+  :root {
+    --navy: #0a1e42;
+    --navy-2: #10285a;
+    --navy-3: #1a3a7a;
+    --kpmg-blue: #00338D;
+    --accent: #4a90ff;
+    --cyan: #66d9ff;
+    --green: #2ecc8f;
+    --red: #ff5a6a;
+    --amber: #ffc857;
+    --text: #eaf1ff;
+    --muted: #8fa3c8;
+    --card-bg: #12destage;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background: radial-gradient(1200px 700px at 70% -10%, #16346e 0%, var(--navy) 55%, #060f24 100%);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  #app { width: 100%; max-width: 760px; padding: 16px; }
+
+  /* ---------- shared ---------- */
+  .screen { display: none; animation: fadeIn .35s ease; }
+  .screen.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+  .btn {
+    display: inline-block; border: none; cursor: pointer;
+    font-family: inherit; font-weight: 700; font-size: 1.05rem;
+    padding: 14px 34px; border-radius: 10px; color: white;
+    background: linear-gradient(135deg, var(--kpmg-blue), #1f5fd0);
+    box-shadow: 0 6px 20px rgba(31, 95, 208, .45);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(31, 95, 208, .6); }
+  .btn:active { transform: translateY(0); }
+  .btn.secondary { background: #223a6b; box-shadow: none; }
+
+  .tag {
+    display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: 4px 10px; border-radius: 999px;
+    background: rgba(102, 217, 255, .12); color: var(--cyan); border: 1px solid rgba(102, 217, 255, .35);
+  }
+
+  /* ---------- title screen ---------- */
+  #title-screen { text-align: center; }
+  .badge-file {
+    display: inline-block; margin-bottom: 18px; padding: 6px 16px; border-radius: 6px;
+    border: 1px dashed rgba(255, 200, 87, .6); color: var(--amber);
+    font-size: .75rem; letter-spacing: .25em; text-transform: uppercase;
+  }
+  h1.game-title {
+    font-size: clamp(2.2rem, 7vw, 3.6rem); line-height: 1.05; margin-bottom: 6px;
+    letter-spacing: -.01em;
+  }
+  h1 .rf { color: var(--red); text-shadow: 0 0 30px rgba(255, 90, 106, .5); }
+  .subtitle { color: var(--muted); font-size: 1.05rem; margin-bottom: 26px; }
+  .intro-card {
+    text-align: left; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09);
+    border-radius: 14px; padding: 22px 24px; margin: 0 auto 26px; max-width: 620px;
+  }
+  .intro-card p { color: #c9d6f2; line-height: 1.55; margin-bottom: 10px; font-size: .95rem; }
+  .intro-card p:last-child { margin-bottom: 0; }
+  .keys { color: var(--muted); font-size: .8rem; margin-top: 14px; }
+  kbd {
+    background: #223a6b; border-radius: 5px; padding: 2px 8px; font-family: inherit;
+    font-size: .78rem; border: 1px solid #34518f; border-bottom-width: 3px;
+  }
+
+  /* ---------- briefing ---------- */
+  .brief-box {
+    background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09);
+    border-radius: 14px; padding: 24px; margin-top: 14px;
+  }
+  .brief-box h2 { font-size: 1.5rem; margin: 8px 0 4px; }
+  .brief-box .memo { color: #c9d6f2; line-height: 1.55; margin: 12px 0 18px; font-size: .95rem; }
+  .pattern-chip {
+    display: flex; gap: 12px; align-items: flex-start; background: rgba(255, 90, 106, .07);
+    border: 1px solid rgba(255, 90, 106, .25); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px;
+  }
+  .pattern-chip.known { background: rgba(102,217,255,.05); border-color: rgba(102,217,255,.2); opacity: .75; }
+  .pattern-chip .ico { font-size: 1.4rem; line-height: 1.2; }
+  .pattern-chip b { display: block; font-size: .92rem; margin-bottom: 2px; }
+  .pattern-chip span { color: var(--muted); font-size: .84rem; line-height: 1.45; }
+
+  /* ---------- game HUD ---------- */
+  .hud { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+  .hud-item {
+    flex: 1; min-width: 110px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+    border-radius: 10px; padding: 8px 14px;
+  }
+  .hud-item .lbl { font-size: .62rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
+  .hud-item .val { font-size: 1.25rem; font-weight: 800; }
+  #hud-streak .val { color: var(--amber); }
+  .trust-bar { height: 7px; background: #223a6b; border-radius: 999px; margin-top: 6px; overflow: hidden; }
+  .trust-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--green), #7fe8c0); transition: width .3s ease, background .3s; }
+  .trust-fill.low { background: linear-gradient(90deg, var(--red), #ff8f9a); }
+
+  /* ---------- transaction card ---------- */
+  .txn-card {
+    background: linear-gradient(160deg, #f7f9ff, #e9eefb);
+    color: #17233f; border-radius: 16px; padding: 22px 24px 18px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .5);
+    position: relative; animation: dealIn .3s ease;
+  }
+  @keyframes dealIn { from { opacity: 0; transform: translateY(18px) rotate(.6deg); } to { opacity: 1; transform: none; } }
+  .txn-card.flash-good { animation: flashGood .5s ease; }
+  .txn-card.flash-bad { animation: flashBad .5s ease; }
+  @keyframes flashGood { 0% { box-shadow: 0 0 0 4px var(--green), 0 18px 50px rgba(0,0,0,.5); } 100% { box-shadow: 0 18px 50px rgba(0,0,0,.5); } }
+  @keyframes flashBad { 0%, 40% { box-shadow: 0 0 0 4px var(--red), 0 18px 50px rgba(0,0,0,.5); transform: translateX(0); } 15% { transform: translateX(-7px); } 30% { transform: translateX(7px); } 100% { box-shadow: 0 18px 50px rgba(0,0,0,.5); } }
+
+  .txn-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 6px; }
+  .txn-id { font-size: .72rem; color: #6b7ba0; letter-spacing: .06em; font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .txn-date { font-size: .78rem; color: #40598f; font-weight: 600; }
+  .txn-amount { font-size: 2.1rem; font-weight: 800; letter-spacing: -.02em; margin-bottom: 2px; color: #0d1b3a; }
+  .txn-desc { color: #40598f; font-size: .92rem; margin-bottom: 14px; }
+  .txn-parties { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+  .party { background: white; border: 1px solid #d7e0f5; border-radius: 10px; padding: 8px 12px; flex: 1; min-width: 170px; }
+  .party .role { font-size: .6rem; text-transform: uppercase; letter-spacing: .14em; color: #8593b5; }
+  .party .name { font-weight: 700; font-size: .95rem; }
+  .party .juris { font-size: .74rem; color: #63719a; }
+  .party .juris .offshore { color: #c0392b; font-weight: 700; }
+  .arrow { font-size: 1.3rem; color: #8fa3c8; }
+  .txn-context {
+    background: #fff7e0; border: 1px solid #f0d992e; border-left: 4px solid var(--amber);
+    border-radius: 8px; padding: 10px 12px; font-size: .86rem; color: #5c4a12; line-height: 1.45;
+  }
+  .txn-context b { color: #3f3106; }
+
+  .timer-track { height: 6px; background: rgba(255,255,255,.12); border-radius: 999px; margin: 16px 0 14px; overflow: hidden; }
+  .timer-fill { height: 100%; background: var(--cyan); border-radius: 999px; transition: none; }
+  .timer-fill.urgent { background: var(--red); }
+
+  .actions { display: flex; gap: 12px; }
+  .act-btn {
+    flex: 1; border: none; cursor: pointer; font-family: inherit; font-weight: 800;
+    font-size: 1.1rem; padding: 16px; border-radius: 12px; color: white;
+    transition: transform .1s ease, filter .1s ease;
+  }
+  .act-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+  .act-btn:active { transform: scale(.98); }
+  .act-btn:disabled { opacity: .5; cursor: default; transform: none; }
+  .act-flag { background: linear-gradient(135deg, #d63031, #b02a37); box-shadow: 0 6px 18px rgba(214, 48, 49, .4); }
+  .act-clear { background: linear-gradient(135deg, #14996b, #0f7d57); box-shadow: 0 6px 18px rgba(20, 153, 107, .4); }
+  .act-btn small { display: block; font-weight: 500; font-size: .7rem; opacity: .8; margin-top: 2px; }
+
+  .verdict {
+    margin-top: 12px; border-radius: 10px; padding: 12px 14px; font-size: .9rem; line-height: 1.5;
+    display: none; animation: fadeIn .2s ease;
+  }
+  .verdict.show { display: block; }
+  .verdict.good { background: rgba(46, 204, 143, .12); border: 1px solid rgba(46, 204, 143, .4); color: #b8f5dd; }
+  .verdict.bad { background: rgba(255, 90, 106, .12); border: 1px solid rgba(255, 90, 106, .4); color: #ffd0d5; }
+  .verdict b { display: block; margin-bottom: 2px; }
+
+  .streak-pop {
+    position: fixed; left: 50%; top: 18%; transform: translateX(-50%);
+    font-size: 2rem; font-weight: 900; color: var(--amber); pointer-events: none;
+    text-shadow: 0 4px 20px rgba(0,0,0,.6); animation: popUp .8s ease forwards; z-index: 50;
+  }
+  @keyframes popUp { 0% { opacity: 0; transform: translate(-50%, 10px) scale(.7); } 25% { opacity: 1; transform: translate(-50%, 0) scale(1.1); } 100% { opacity: 0; transform: translate(-50%, -34px) scale(1); } }
+
+  /* ---------- debrief / results ---------- */
+  .result-hero { text-align: center; padding: 28px 0 8px; }
+  .result-hero .big-rank { font-size: clamp(1.7rem, 5.5vw, 2.6rem); font-weight: 900; margin: 8px 0 4px; }
+  .result-hero .flavor { color: var(--muted); max-width: 520px; margin: 0 auto 6px; line-height: 1.5; }
+  .stat-row { display: flex; gap: 10px; margin: 22px 0; flex-wrap: wrap; }
+  .stat { flex: 1; min-width: 120px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09); border-radius: 12px; padding: 14px; text-align: center; }
+  .stat .n { font-size: 1.6rem; font-weight: 800; }
+  .stat .l { font-size: .68rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+  .lesson {
+    background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 10px; font-size: .88rem; color: #c9d6f2; line-height: 1.5;
+  }
+  .lesson b { color: var(--text); }
+  .center { text-align: center; margin-top: 22px; }
+  .footer-note { text-align: center; color: #5d7099; font-size: .72rem; margin-top: 26px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ===================== TITLE ===================== -->
+  <section id="title-screen" class="screen active">
+    <div style="text-align:center">
+      <div class="badge-file">Case File 2001-ENR &bull; Forensic Technology</div>
+      <h1 class="game-title"><span class="rf">RED FLAG</span><br>Follow the Money</h1>
+      <p class="subtitle">You're the newest analyst on the Forensic Technology team.<br>The data doesn't lie — but it does hide.</p>
+    </div>
+    <div class="intro-card">
+      <p><b>Your job:</b> a live transaction feed from a client under investigation lands on your screen. For each transaction, decide fast — <b style="color:#ff8f9a">🚩 FLAG</b> it for the investigation team, or <b style="color:#7fe8c0">✅ CLEAR</b> it as legitimate business.</p>
+      <p><b>Flag real fraud</b> to score points and build a streak multiplier. <b>False-flag a legitimate payment</b> and the client loses trust in the engagement. <b>Miss real fraud</b> and they lose even more. Trust hits zero? The engagement is over.</p>
+      <p>Each level briefs you on new fraud typologies — the same ones real forensic teams hunt for.</p>
+      <div class="keys">Keyboard: <kbd>F</kbd> or <kbd>←</kbd> to flag &nbsp;&bull;&nbsp; <kbd>C</kbd> or <kbd>→</kbd> to clear</div>
+    </div>
+    <div style="text-align:center">
+      <button class="btn" onclick="Game.startBriefing(0)">Accept the Engagement →</button>
+    </div>
+    <p class="footer-note">A training game inspired by real forensic data-analytics work: structuring detection,<br>shell-entity screening, round-tripping and vendor fraud analytics. All data is synthetic.</p>
+  </section>
+
+  <!-- ===================== BRIEFING ===================== -->
+  <section id="briefing-screen" class="screen">
+    <span class="tag" id="brief-level-tag">Level 1</span>
+    <div class="brief-box">
+      <h2 id="brief-title"></h2>
+      <p class="memo" id="brief-memo"></p>
+      <div id="brief-patterns"></div>
+    </div>
+    <div class="center">
+      <button class="btn" id="brief-start-btn">Open the Feed →</button>
+    </div>
+  </section>
+
+  <!-- ===================== GAME ===================== -->
+  <section id="game-screen" class="screen">
+    <div class="hud">
+      <div class="hud-item"><div class="lbl">Score</div><div class="val" id="hud-score">0</div></div>
+      <div class="hud-item" id="hud-streak"><div class="lbl">Streak</div><div class="val" id="hud-streak-val">—</div></div>
+      <div class="hud-item"><div class="lbl">Transaction</div><div class="val" id="hud-progress">1/10</div></div>
+      <div class="hud-item" style="flex:1.4"><div class="lbl">Client Trust</div>
+        <div class="trust-bar"><div class="trust-fill" id="trust-fill" style="width:100%"></div></div>
+      </div>
+    </div>
+
+    <div class="timer-track"><div class="timer-fill" id="timer-fill"></div></div>
+
+    <div class="txn-card" id="txn-card">
+      <div class="txn-top">
+        <span class="txn-id" id="txn-id"></span>
+        <span class="txn-date" id="txn-date"></span>
+      </div>
+      <div class="txn-amount" id="txn-amount"></div>
+      <div class="txn-desc" id="txn-desc"></div>
+      <div class="txn-parties">
+        <div class="party">
+          <div class="role">From</div>
+          <div class="name" id="txn-sender"></div>
+          <div class="juris" id="txn-sender-juris"></div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="party">
+          <div class="role">To</div>
+          <div class="name" id="txn-receiver"></div>
+          <div class="juris" id="txn-receiver-juris"></div>
+        </div>
+      </div>
+      <div class="txn-context" id="txn-context"></div>
+      <div class="verdict" id="verdict"></div>
+    </div>
+
+    <div class="actions" style="margin-top:14px">
+      <button class="act-btn act-flag" id="btn-flag" onclick="Game.decide(true)">🚩 FLAG<small>suspicious — escalate</small></button>
+      <button class="act-btn act-clear" id="btn-clear" onclick="Game.decide(false)">✅ CLEAR<small>legitimate business</small></button>
+    </div>
+  </section>
+
+  <!-- ===================== LEVEL DEBRIEF ===================== -->
+  <section id="debrief-screen" class="screen">
+    <div class="result-hero">
+      <span class="tag" id="debrief-tag">Level 1 complete</span>
+      <div class="big-rank" id="debrief-title">Level cleared</div>
+      <p class="flavor" id="debrief-flavor"></p>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="n" id="d-hits">0</div><div class="l">Fraud caught</div></div>
+      <div class="stat"><div class="n" id="d-missed">0</div><div class="l">Fraud missed</div></div>
+      <div class="stat"><div class="n" id="d-false">0</div><div class="l">False flags</div></div>
+      <div class="stat"><div class="n" id="d-score">0</div><div class="l">Total score</div></div>
+    </div>
+    <div id="debrief-lessons"></div>
+    <div class="center">
+      <button class="btn" id="debrief-next-btn">Next Level →</button>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL ===================== -->
+  <section id="final-screen" class="screen">
+    <div class="result-hero">
+      <span class="tag" id="final-tag">Engagement complete</span>
+      <div style="font-size:3rem" id="final-emoji">🕵️</div>
+      <div class="big-rank" id="final-rank"></div>
+      <p class="flavor" id="final-flavor"></p>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="n" id="f-score">0</div><div class="l">Final score</div></div>
+      <div class="stat"><div class="n" id="f-acc">0%</div><div class="l">Accuracy</div></div>
+      <div class="stat"><div class="n" id="f-caught">0</div><div class="l">Fraud caught</div></div>
+      <div class="stat"><div class="n" id="f-streak">0</div><div class="l">Best streak</div></div>
+    </div>
+    <div class="lesson" id="final-lesson"></div>
+    <div class="center">
+      <button class="btn" onclick="Game.restart()">Play Again ↻</button>
+    </div>
+    <p class="footer-note">In real engagements, analytics like these run across millions of transactions —<br>the analyst's judgement is what turns an anomaly into evidence.</p>
+  </section>
+
+</div>
+
+<script>
+"use strict";
+
+/* =========================================================
+   RED FLAG: Follow the Money
+   A forensic-technology training game. All data synthetic.
+   ========================================================= */
+
+const rand  = (a, b) => a + Math.random() * (b - a);
+const randI = (a, b) => Math.floor(rand(a, b + 1));
+const pick  = arr => arr[randI(0, arr.length - 1)];
+const money = n => "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const txnId = () => Array.from({length: 12}, () => "0123456789ABCDEF"[randI(0, 15)]).join("").replace(/^(.{8})(.{4})$/, "$1-$2");
+const randDate = () => {
+  const d = new Date(2001, randI(0, 10), randI(1, 28));
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+};
+
+/* ---------- entity pools (Enron-flavoured, matches workshop dataset) ---------- */
+const CLIENT = { name: "Enron Corp", juris: "US" };
+const LEGIT_PARTIES = [
+  { name: "Deutsche Bank AG", juris: "DE" },
+  { name: "Citibank N.A.", juris: "US" },
+  { name: "Portland General Electric", juris: "US" },
+  { name: "EOTT Energy Partners", juris: "US" },
+  { name: "Sempra Energy Trading", juris: "US" },
+  { name: "El Paso Energy", juris: "US" },
+  { name: "Dynegy Inc", juris: "US" },
+  { name: "Reliant Energy Services", juris: "US" },
+  { name: "TXU Energy Trading", juris: "US" },
+  { name: "Williams Energy Marketing", juris: "US" },
+];
+const SHELLS = [
+  { name: "LJM Cayman L.P.", juris: "KY" },
+  { name: "LJM2 Co-Investment L.P.", juris: "KY" },
+  { name: "Chewco Investments L.P.", juris: "KY" },
+  { name: "Raptor I LLC", juris: "VG" },
+  { name: "Southampton Place Ltd", juris: "VG" },
+  { name: "Osprey Trust", juris: "KY" },
+  { name: "Talon Holdings Ltd", juris: "VG" },
+];
+const EXECS = ["Andrew Fastow", "Michael Kopper", "Ben Glisan", "Kevin Hannon", "Lou Pai"];
+const LEGIT_DESCS = [
+  "Fuel supply agreement", "Equipment lease payment", "IT infrastructure services",
+  "Interconnection fee", "Power purchase settlement", "Pipeline capacity charge",
+  "Turbine maintenance contract", "Payroll processing fee", "Insurance premium — Q3",
+  "Legal services retainer", "Office lease — Houston HQ", "Audit engagement fee",
+];
+const VAGUE_DESCS = [
+  "Consulting services", "Advisory fee", "Management fee", "Structuring fee",
+  "Special project services", "Facilitation payment", "Miscellaneous services",
+];
+
+/* ---------- fraud pattern library ---------- */
+const PATTERNS = {
+  shell: {
+    ico: "🏝️",
+    label: "Offshore shell entity",
+    brief: "Large payments to newly-formed entities in offshore jurisdictions (KY, VG) with vague descriptions and no real operations. Watch for freshly-registered payees with no staff and PO-box addresses.",
+    lesson: "Real forensic teams screen every counterparty against registries and leak databases (like ICIJ Offshore Leaks). A vendor with no employees, a recent registration date and a Cayman address is a classic special-purpose-entity red flag.",
+    make() {
+      const shell = pick(SHELLS);
+      const amt = randI(8, 60) * 100000 + randI(0, 99999);
+      return {
+        amount: amt, sender: CLIENT, receiver: shell, desc: pick(VAGUE_DESCS),
+        context: `Payee entity registered <b>${randI(6, 45)} days ago</b> • ${pick(["no employees on record", "registered agent is a PO box", "no website or filings found", "same registered address as 14 other entities"])}.`,
+        why: `Six-figure payment for "${pick(VAGUE_DESCS).toLowerCase()}" to a weeks-old ${shell.juris === "KY" ? "Cayman" : "BVI"} entity with no substance — textbook shell-entity risk.`,
+      };
+    },
+  },
+  ghost: {
+    ico: "👻",
+    label: "Ghost vendor",
+    brief: "A 'vendor' that exists only on paper — often traced back to an employee. Watch for vendor bank details or addresses matching employee records.",
+    lesson: "Vendor-master analytics compare vendor addresses, bank accounts and phone numbers against the employee HR file. A match is one of the highest-confidence fraud indicators there is.",
+    make() {
+      const exec = pick(EXECS);
+      const fakeVendor = pick(["Apex Field Services LLC", "Meridian Supply Co", "Gulf Coast Logistics Inc", "Bayou Contracting Group"]);
+      const amt = randI(15, 90) * 1000 + randI(0, 999);
+      return {
+        amount: amt, sender: CLIENT, receiver: { name: fakeVendor, juris: "US" }, desc: pick(["Contractor services", "Site maintenance", "Equipment rental", "Supplies invoice"]),
+        context: `Vendor's ${pick(["bank account", "mailing address", "contact phone number"])} <b>matches employee ${exec}</b> in the HR master file. Vendor was added to the system ${randI(2, 9)} weeks ago by the same employee.`,
+        why: `The vendor's details match ${exec}'s own records — a ghost vendor paying an insider.`,
+      };
+    },
+  },
+  structuring: {
+    ico: "🪓",
+    label: "Structuring (smurfing)",
+    brief: "Breaking a large payment into many small ones, each kept just below the $10,000 reporting threshold. One $9,400 payment is fine. The fifth one this week is not.",
+    lesson: "Structuring detection groups payments by counterparty and time window, then tests amount distributions against the reporting threshold. Individually innocent transactions become damning in aggregate.",
+    make() {
+      const shell = pick([...SHELLS, { name: pick(EXECS), juris: "US" }]);
+      const amt = randI(9000, 9950) + Math.random();
+      const n = randI(3, 7);
+      return {
+        amount: amt, sender: CLIENT, receiver: shell, desc: pick(["Expense reimbursement", "Consulting fee", "Contract services", "Petty disbursement"]),
+        context: `<b>${n}${["rd","th","th","th","th"][Math.min(n-3,4)]} payment to this payee in ${randI(4, 9)} days</b> — every one between $9,000 and $9,999, just under the $10,000 reporting threshold.`,
+        why: `Repeated payments clustered just below $10,000 to the same payee — classic structuring to dodge currency-transaction reporting.`,
+      };
+    },
+  },
+  roundtrip: {
+    ico: "🔄",
+    label: "Round-tripping",
+    brief: "Money leaves, then comes straight back — often the same day — to fake revenue or inflate trading volumes. Watch for mirrored amounts returning within hours.",
+    lesson: "Round-trip detection matches outbound and inbound flows by amount and time proximity. Enron famously used circular trades to book phantom revenue — the money went nowhere, but the income statement grew.",
+    make() {
+      const shell = pick(SHELLS);
+      const amt = randI(20, 95) * 100000;
+      const hrs = randI(1, 8);
+      return {
+        amount: amt, sender: CLIENT, receiver: shell, desc: pick(["Asset sale proceeds", "Energy trade settlement", "Capacity swap", "Portfolio transfer"]),
+        context: `An <b>identical amount (${money(amt)}) returned from this payee ${hrs} hour${hrs > 1 ? "s" : ""} later</b>, booked as "trading revenue". Net cash movement: zero.`,
+        why: `Same money out and back within hours, rebooked as revenue — a round-trip trade inflating the books.`,
+      };
+    },
+  },
+  duplicate: {
+    ico: "🧾",
+    label: "Duplicate invoice",
+    brief: "The same invoice paid twice — sometimes an error, sometimes an insider skimming the second payment. Watch for invoice numbers you've already seen.",
+    lesson: "Duplicate-payment analytics do fuzzy matching on invoice number, amount and vendor. Even 'honest' duplicates recovered in an engagement often pay for the whole forensic team.",
+    make() {
+      const v = pick(LEGIT_PARTIES);
+      const inv = "INV-" + randI(1000, 9999);
+      const amt = randI(30, 400) * 1000 + randI(0, 999);
+      return {
+        amount: amt, sender: CLIENT, receiver: v, desc: `Invoice ${inv} — ${pick(["professional services", "materials", "maintenance"])}`,
+        context: `<b>Invoice ${inv} was already paid in full</b> on ${randDate()} for the exact same amount. This would be the second payment — requested by a different approver.`,
+        why: `Second full payment of an already-settled invoice, pushed through by a different approver.`,
+      };
+    },
+  },
+  insider: {
+    ico: "🕶️",
+    label: "Insider self-dealing",
+    brief: "Company money flowing to executives' personal accounts through side deals. Watch for round-number transfers to individuals with thin justification.",
+    lesson: "Conflict-of-interest analytics map payment flows against the org chart and known related parties. When the CFO is on both sides of a deal, independence is gone — and so is the money.",
+    make() {
+      const exec = pick(EXECS);
+      const amt = randI(2, 15) * 100000;
+      return {
+        amount: amt, sender: pick(SHELLS), receiver: { name: exec, juris: "US" }, desc: pick(["Partnership distribution", "Management incentive", "Investment return", "Advisory bonus"]),
+        context: `${exec} is a <b>senior ${CLIENT.name} executive</b> — and also a beneficial owner of the paying entity. The transfer is a clean round number with no supporting agreement on file.`,
+        why: `An executive being paid personally by an entity they secretly control — self-dealing on both sides of the deal.`,
+      };
+    },
+  },
+};
+
+/* ---------- legitimate transaction generator (with realistic near-misses) ---------- */
+function makeLegit() {
+  const roll = Math.random();
+  const v = pick(LEGIT_PARTIES);
+  if (roll < 0.2) {
+    // near-miss: offshore but well-documented
+    return {
+      amount: randI(5, 40) * 100000 + randI(0, 99999),
+      sender: CLIENT, receiver: { name: "HSBC Holdings plc", juris: "GB" },
+      desc: "Syndicated loan repayment — tranche B",
+      context: `Counterparty is a <b>major regulated bank</b>; payment matches the loan schedule on file and was pre-approved by treasury.`,
+      why: `Cross-border, but fully documented against a known loan agreement with a regulated bank.`,
+    };
+  }
+  if (roll < 0.38) {
+    // near-miss: single payment just under 10k (only a pattern when repeated)
+    return {
+      amount: randI(9000, 9900) + Math.random(),
+      sender: CLIENT, receiver: v,
+      desc: pick(["Conference sponsorship", "Training workshop fee", "Software licence renewal"]),
+      context: `<b>First and only payment</b> to this payee in the last 12 months. Standard PO and approval chain attached.`,
+      why: `One payment under $10k with a clean paper trail isn't structuring — the pattern needs repetition.`,
+    };
+  }
+  if (roll < 0.52) {
+    // near-miss: large but routine
+    return {
+      amount: randI(10, 80) * 100000 + randI(0, 99999),
+      sender: v, receiver: CLIENT,
+      desc: pick(["Power purchase settlement", "Gas delivery settlement", "Monthly netting settlement"]),
+      context: `Matches the counterparty's <b>scheduled monthly settlement</b>; amount within 3% of the trailing 12-month average.`,
+      why: `Big number, boring payment — it matches the contract schedule and historical run-rate.`,
+    };
+  }
+  return {
+    amount: randI(20, 900) * 1000 + randI(0, 999),
+    sender: Math.random() < 0.5 ? CLIENT : v,
+    receiver: Math.random() < 0.5 ? v : CLIENT,
+    desc: pick(LEGIT_DESCS),
+    context: pick([
+      `Recurring monthly payment — <b>36th consecutive month</b>, consistent amount.`,
+      `Three-way match complete: PO, goods receipt and invoice all agree.`,
+      `Approved through standard delegation-of-authority chain; nothing unusual in payee history.`,
+      `Counterparty is a long-standing supplier with ${randI(4, 12)} years of clean history.`,
+    ]),
+    why: `Routine, well-documented business payment with a full approval trail.`,
+  };
+}
+
+/* ---------- levels ---------- */
+const LEVELS = [
+  {
+    title: "Day One: Offshore Orientation",
+    memo: "Welcome to the team. The client's accounts payable feed is live. Intelligence says money is leaking to offshore special-purpose entities and at least one vendor that doesn't exist. Read the context notes under each transaction — that's your evidence.",
+    patterns: ["shell", "ghost"],
+    cards: 8, fraudRatio: 0.5, time: 12,
+  },
+  {
+    title: "The Smurf Hunt",
+    memo: "Nice work. Now it gets sneakier: someone is slicing payments to stay under the $10,000 reporting radar. Remember — one small payment is normal. A parade of them to the same payee is a pattern.",
+    patterns: ["structuring", "shell", "ghost"],
+    cards: 10, fraudRatio: 0.5, time: 10,
+  },
+  {
+    title: "Round Trip Tickets",
+    memo: "The client's revenue looks too good. We suspect circular trades — cash that leaves and boomerangs back as 'income' — plus invoices getting paid twice. Trust the cash flow, not the P&L.",
+    patterns: ["roundtrip", "duplicate", "structuring", "shell"],
+    cards: 12, fraudRatio: 0.55, time: 8,
+  },
+  {
+    title: "Full Case Load",
+    memo: "Final stretch. Executives are now personally in the money flow, and every typology you've learned is in play at once. The regulator's deadline is tonight. Make every call count.",
+    patterns: ["insider", "roundtrip", "duplicate", "structuring", "shell", "ghost"],
+    cards: 14, fraudRatio: 0.55, time: 7,
+  },
+];
+
+const RANKS = [
+  { min: 0,   emoji: "📎", rank: "Spreadsheet Casualty",            flavor: "The fraudsters sent you a thank-you card. Time to reread the typology briefings." },
+  { min: .45, emoji: "🎓", rank: "Graduate Analyst",                flavor: "You caught some of it, but too much slipped past. The instincts are there — sharpen them." },
+  { min: .6,  emoji: "🔍", rank: "Forensic Data Analyst",           flavor: "Solid casework. You can spot a shell company at fifty paces." },
+  { min: .75, emoji: "🕵️", rank: "Senior Forensic Technologist",    flavor: "Impressive. The engagement partner is quietly taking credit for hiring you." },
+  { min: .87, emoji: "🧠", rank: "Forensic Technology Director",    flavor: "Structuring, round-trips, ghost vendors — nothing got past you. Regulators want you on speed dial." },
+  { min: .95, emoji: "🏆", rank: "Partner, Forensic Technology",    flavor: "Flawless judgement under pressure. Somewhere, a CFO just started sweating." },
+];
+
+/* ---------- game engine ---------- */
+const $ = id => document.getElementById(id);
+
+const Game = {
+  level: 0, deck: [], cardIdx: 0,
+  score: 0, streak: 0, bestStreak: 0, trust: 100,
+  totals: { hits: 0, missed: 0, falseFlags: 0, cleared: 0 },
+  levelStats: null, timer: null, timeLeft: 0, locked: false,
+  seenPatterns: new Set(),
+
+  show(id) {
+    document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+    $(id).classList.add("active");
+  },
+
+  restart() {
+    Object.assign(this, {
+      level: 0, score: 0, streak: 0, bestStreak: 0, trust: 100,
+      totals: { hits: 0, missed: 0, falseFlags: 0, cleared: 0 },
+      seenPatterns: new Set(),
+    });
+    this.show("title-screen");
+  },
+
+  startBriefing(levelIdx) {
+    this.level = levelIdx;
+    const lv = LEVELS[levelIdx];
+    $("brief-level-tag").textContent = `Level ${levelIdx + 1} of ${LEVELS.length}`;
+    $("brief-title").textContent = lv.title;
+    $("brief-memo").textContent = lv.memo;
+    const box = $("brief-patterns");
+    box.innerHTML = "";
+    lv.patterns.forEach(key => {
+      const p = PATTERNS[key];
+      const isNew = !this.seenPatterns.has(key);
+      const div = document.createElement("div");
+      div.className = "pattern-chip" + (isNew ? "" : " known");
+      div.innerHTML = `<div class="ico">${p.ico}</div><div><b>${p.label}${isNew ? "" : " (known)"}</b><span>${p.brief}</span></div>`;
+      box.appendChild(div);
+      this.seenPatterns.add(key);
+    });
+    $("brief-start-btn").onclick = () => this.startLevel();
+    this.show("briefing-screen");
+  },
+
+  buildDeck(lv) {
+    const nFraud = Math.round(lv.cards * lv.fraudRatio);
+    const deck = [];
+    for (let i = 0; i < nFraud; i++) {
+      const key = lv.patterns[i % lv.patterns.length];
+      deck.push({ fraud: true, pattern: key, ...PATTERNS[key].make() });
+    }
+    for (let i = 0; i < lv.cards - nFraud; i++) deck.push({ fraud: false, pattern: null, ...makeLegit() });
+    // shuffle
+    for (let i = deck.length - 1; i > 0; i--) {
+      const j = randI(0, i);
+      [deck[i], deck[j]] = [deck[j], deck[i]];
+    }
+    return deck;
+  },
+
+  startLevel() {
+    const lv = LEVELS[this.level];
+    this.deck = this.buildDeck(lv);
+    this.cardIdx = 0;
+    this.levelStats = { hits: 0, missed: 0, falseFlags: 0 };
+    this.show("game-screen");
+    this.renderHud();
+    this.dealCard();
+  },
+
+  renderHud() {
+    $("hud-score").textContent = this.score.toLocaleString();
+    $("hud-streak-val").textContent = this.streak >= 2 ? `${this.streak}× 🔥` : "—";
+    $("hud-progress").textContent = `${Math.min(this.cardIdx + 1, this.deck.length)}/${this.deck.length}`;
+    const fill = $("trust-fill");
+    fill.style.width = Math.max(this.trust, 0) + "%";
+    fill.classList.toggle("low", this.trust <= 35);
+  },
+
+  dealCard() {
+    if (this.cardIdx >= this.deck.length) return this.endLevel();
+    const t = this.deck[this.cardIdx];
+    this.locked = false;
+    $("btn-flag").disabled = $("btn-clear").disabled = false;
+
+    const card = $("txn-card");
+    card.classList.remove("flash-good", "flash-bad");
+    void card.offsetWidth; // restart deal animation
+    card.style.animation = "none";
+    requestAnimationFrame(() => { card.style.animation = ""; });
+
+    $("txn-id").textContent = "TXN " + txnId();
+    $("txn-date").textContent = randDate();
+    $("txn-amount").textContent = money(t.amount);
+    $("txn-desc").textContent = t.desc;
+    $("txn-sender").textContent = t.sender.name;
+    $("txn-receiver").textContent = t.receiver.name;
+    $("txn-sender-juris").innerHTML = this.jurisLabel(t.sender.juris);
+    $("txn-receiver-juris").innerHTML = this.jurisLabel(t.receiver.juris);
+    $("txn-context").innerHTML = "📎 <b>Analyst note:</b> " + t.context;
+    $("verdict").className = "verdict";
+    this.renderHud();
+    this.startTimer();
+  },
+
+  jurisLabel(j) {
+    const names = { US: "United States", DE: "Germany", GB: "United Kingdom", KY: "Cayman Islands", VG: "British Virgin Islands" };
+    const offshore = j === "KY" || j === "VG";
+    return `Jurisdiction: ${offshore ? `<span class="offshore">${names[j]} ⚠</span>` : names[j] || j}`;
+  },
+
+  startTimer() {
+    clearInterval(this.timer);
+    const total = LEVELS[this.level].time * 1000;
+    const start = performance.now();
+    const fill = $("timer-fill");
+    fill.style.width = "100%";
+    fill.classList.remove("urgent");
+    this.timer = setInterval(() => {
+      const left = total - (performance.now() - start);
+      fill.style.width = Math.max(left / total * 100, 0) + "%";
+      fill.classList.toggle("urgent", left < total * 0.3);
+      if (left <= 0) {
+        clearInterval(this.timer);
+        this.timeout();
+      }
+    }, 50);
+  },
+
+  timeout() {
+    if (this.locked) return;
+    this.locked = true;
+    $("btn-flag").disabled = $("btn-clear").disabled = true;
+    const t = this.deck[this.cardIdx];
+    this.streak = 0;
+    this.trust -= 10;
+    if (t.fraud) { this.levelStats.missed++; this.totals.missed++; }
+    this.showVerdict(false, `⏱ <b>Too slow — the transaction cleared unreviewed.</b> ${t.fraud ? "And it was fraud: " + t.why : "It was legitimate, but an unreviewed feed is an audit finding."}`);
+    this.afterDecision();
+  },
+
+  decide(flagged) {
+    if (this.locked) return;
+    this.locked = true;
+    clearInterval(this.timer);
+    $("btn-flag").disabled = $("btn-clear").disabled = true;
+    const t = this.deck[this.cardIdx];
+    const correct = flagged === t.fraud;
+
+    if (correct) {
+      this.streak++;
+      this.bestStreak = Math.max(this.bestStreak, this.streak);
+      const mult = Math.min(this.streak, 5);
+      const pts = 100 * mult;
+      this.score += pts;
+      if (t.fraud) { this.levelStats.hits++; this.totals.hits++; } else { this.totals.cleared++; }
+      if (this.streak >= 3) this.popStreak(`${this.streak}× streak! +${pts}`);
+      this.showVerdict(true, t.fraud
+        ? `🚩 <b>Correct — flagged for the investigation team. +${pts}</b> ${t.why}`
+        : `✅ <b>Correct — legitimate business. +${pts}</b> ${t.why}`);
+    } else {
+      this.streak = 0;
+      if (t.fraud) {
+        this.levelStats.missed++; this.totals.missed++;
+        this.trust -= 15;
+        this.showVerdict(false, `❌ <b>You cleared real fraud (−15 trust).</b> ${t.why}`);
+      } else {
+        this.levelStats.falseFlags++; this.totals.falseFlags++;
+        this.trust -= 10;
+        this.showVerdict(false, `❌ <b>False flag — that was legitimate (−10 trust).</b> ${t.why} The client's CFO is now on the phone with your engagement partner.`);
+      }
+    }
+    this.afterDecision(correct);
+  },
+
+  showVerdict(good, html) {
+    const v = $("verdict");
+    v.className = "verdict show " + (good ? "good" : "bad");
+    v.innerHTML = html;
+    const card = $("txn-card");
+    card.classList.remove("flash-good", "flash-bad");
+    void card.offsetWidth;
+    card.classList.add(good ? "flash-good" : "flash-bad");
+  },
+
+  popStreak(text) {
+    const el = document.createElement("div");
+    el.className = "streak-pop";
+    el.textContent = "🔥 " + text;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 850);
+  },
+
+  afterDecision(correct) {
+    this.renderHud();
+    if (this.trust <= 0) {
+      setTimeout(() => this.gameOver(), 1600);
+      return;
+    }
+    setTimeout(() => {
+      this.cardIdx++;
+      this.dealCard();
+    }, correct ? 1500 : 2600);
+  },
+
+  endLevel() {
+    clearInterval(this.timer);
+    const lv = LEVELS[this.level];
+    const s = this.levelStats;
+    $("debrief-tag").textContent = `Level ${this.level + 1} complete — ${lv.title}`;
+    const perfect = s.missed === 0 && s.falseFlags === 0;
+    $("debrief-title").textContent = perfect ? "Flawless review 🏅" : s.missed === 0 ? "All fraud caught" : "Level complete";
+    $("debrief-flavor").textContent = perfect
+      ? "Every call correct. The engagement partner just forwarded your work to the whole team."
+      : s.missed > 0
+        ? "Some fraud slipped through to the regulator's sample. Study the typologies below before the next feed."
+        : "You caught all the fraud, but a few false flags cost some client goodwill.";
+    $("d-hits").textContent = s.hits;
+    $("d-missed").textContent = s.missed;
+    $("d-false").textContent = s.falseFlags;
+    $("d-score").textContent = this.score.toLocaleString();
+
+    const lessons = $("debrief-lessons");
+    lessons.innerHTML = "";
+    lv.patterns.slice(0, 3).forEach(key => {
+      const p = PATTERNS[key];
+      const div = document.createElement("div");
+      div.className = "lesson";
+      div.innerHTML = `${p.ico} <b>${p.label}:</b> ${p.lesson}`;
+      lessons.appendChild(div);
+    });
+
+    const nextBtn = $("debrief-next-btn");
+    if (this.level + 1 < LEVELS.length) {
+      nextBtn.textContent = "Next Level →";
+      nextBtn.onclick = () => this.startBriefing(this.level + 1);
+    } else {
+      nextBtn.textContent = "See Final Report →";
+      nextBtn.onclick = () => this.finalReport(false);
+    }
+    this.show("debrief-screen");
+  },
+
+  gameOver() {
+    this.finalReport(true);
+  },
+
+  finalReport(fired) {
+    const t = this.totals;
+    const decisions = t.hits + t.missed + t.falseFlags + t.cleared;
+    const acc = decisions ? (t.hits + t.cleared) / decisions : 0;
+    let r;
+    if (fired) {
+      r = { emoji: "📉", rank: "Engagement Terminated", flavor: "Client trust hit zero — the client pulled the engagement. In forensic work, credibility is the product: every flag has to be defensible." };
+      $("final-tag").textContent = "Engagement lost";
+    } else {
+      r = [...RANKS].reverse().find(x => acc >= x.min) || RANKS[0];
+      $("final-tag").textContent = "Engagement complete";
+    }
+    $("final-emoji").textContent = r.emoji;
+    $("final-rank").textContent = r.rank;
+    $("final-flavor").textContent = r.flavor;
+    $("f-score").textContent = this.score.toLocaleString();
+    $("f-acc").textContent = Math.round(acc * 100) + "%";
+    $("f-caught").textContent = t.hits;
+    $("f-streak").textContent = this.bestStreak + "×";
+    $("final-lesson").innerHTML = `🧭 <b>What this game trains:</b> the same judgement forensic technology teams apply at scale — screening counterparties against offshore registries, detecting structuring below reporting thresholds, matching round-trip cash flows, and reconciling vendors against employee records. The tools score millions of transactions; the analyst decides what becomes evidence.`;
+    this.show("final-screen");
+  },
+};
+
+/* ---------- keyboard controls ---------- */
+document.addEventListener("keydown", e => {
+  if (!$("game-screen").classList.contains("active")) return;
+  const k = e.key.toLowerCase();
+  if (k === "f" || k === "arrowleft") { e.preventDefault(); Game.decide(true); }
+  if (k === "c" || k === "arrowright") { e.preventDefault(); Game.decide(false); }
+});
+</script>
+</body>
+</html>
